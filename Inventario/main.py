@@ -1,8 +1,9 @@
+
 from inventario import Inventario
 from producto import Producto
 
 def menu():
-    print("\n--- SISTEMA DE GESTIÓN DE INVENTARIOS ---")
+    print("\n--- SISTEMA AVANZADO DE GESTIÓN DE INVENTARIO ---")
     print("1. Agregar producto")
     print("2. Eliminar producto")
     print("3. Actualizar producto")
@@ -28,7 +29,7 @@ def main():
                 if inventario.agregar_producto(producto):
                     print("Producto agregado correctamente.")
                 else:
-                    print("Error: el ID ya existe o no se pudo guardar.")
+                    print("El ID ya existe.")
 
             elif opcion == "2":
                 id_p = int(input("ID del producto a eliminar: "))
@@ -70,7 +71,7 @@ def main():
                 print("Opción inválida.")
 
         except ValueError:
-            print("Error: entrada de datos inválida.")
+            print("Entrada inválida. Intente nuevamente.")
 
 if __name__ == "__main__":
     main()

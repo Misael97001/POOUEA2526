@@ -1,7 +1,6 @@
+
 class Producto:
-    """
-    Representa un producto dentro del inventario.
-    """
+    """ Representa un producto dentro del inventario."""
 
     def __init__(self, id_producto, nombre, cantidad, precio):
         self.id = id_producto
