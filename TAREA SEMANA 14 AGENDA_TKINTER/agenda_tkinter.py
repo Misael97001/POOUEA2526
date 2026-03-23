@@ -1,7 +1,6 @@
 
 """
 Aplicación de Agenda Personal con Tkinter
-Autor: Generado por ChatGPT
 Descripción:
 Permite agregar, visualizar y eliminar eventos con fecha, hora y descripción.
 """
